@@ -1,4 +1,4 @@
-# I,m write two way for sumertion numbers
+# I,m write some way for sumertion numbers
 
 
 # __________first solution__________
