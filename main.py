@@ -1,59 +1,16 @@
-# I,m write some way for sumertion numbers
+# this code show that text you write in matn.txt on output
+
+with open("matn.txt", "r", encoding="utf-8") as file:
+    for line in file:
+        print(line.strip())
 
 
-# __________first solution__________
+# this code create a file with text you,r write It
 
 
-def sumeration():
-     num1 = float(input('Enter First Number: '))
-     num2 = float(input('Enter Secend Number: '))
+text = input("Enter your text want show: ")
 
-     sum = (num1 + num2)
-     print(sum)
+with open("newfile.txt", "w", encoding="utf-8") as file:
+    file.write(text)
 
-sumeration()
-
-
-# ___________Secend Solution_________
-
-
-def getNumber(num1, num2):
-     sum = (num1 + num2)
-     print(sum)
-
-getNumber(10, 10.5)
-
-
-# ___________threed solution__________
-
-
-class sumertion :
-     def get_all_numbers():
-          num1 = float(input("Enter Number: "))
-          num2 = float(input("Enter Number: "))
-
-          sum = (num1 + num2)
-
-          if sum is not None:
-               'Moshkeli pish omade !'
-          print(sum)
-     get_all_numbers()
-
-
-# ___________fourd solution___________
-
-
-class Summation:
-    def get_all_numbers(self):
-        num1 = float(input("Enter first number: "))
-        num2 = float(input("Enter second number: "))
-        
-        result = num1 + num2
-        
-        if result is not None:  
-            print(result)
-        else:
-            print('Moshkeli pish amade!')
-
-my_summation = Summation()
-my_summation.get_all_numbers()
+print("New text save succsesful !")
